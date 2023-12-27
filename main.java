@@ -1,12 +1,15 @@
 public class main {
     public static void main(String[] args) 
     {
-        int x = 123;
-        double y = 3.14;
-        boolean z = true;
-        char symbol = '@';
-        String name = "Daniel";
+        String x = "water";
+        String y = "kool-Aid";
+        String temp;
 
-        System.out.println("Your name is "+name);
+        temp = x;
+        x = y;
+        y = temp;
+
+        System.out.println("x: "+x);
+        System.out.println("y: "+y);
     }
 }
