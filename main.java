@@ -1,15 +1,16 @@
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) 
     {
-        String x = "water";
-        String y = "kool-Aid";
-        String temp;
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Where are you? ");
+        String location = scanner.nextLine();
+        System.out.println("How old are you? ");
+        int age = scanner.nextInt();
 
-        temp = x;
-        x = y;
-        y = temp;
-
-        System.out.println("x: "+x);
-        System.out.println("y: "+y);
+        System.out.println("He is now "+location);
+        System.out.println("He is "+age+"years old.");
     }
 }
