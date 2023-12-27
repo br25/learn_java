@@ -1,16 +1,12 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class main {
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Where are you? ");
-        String location = scanner.nextLine();
-        System.out.println("How old are you? ");
-        int age = scanner.nextInt();
+        String name = JOptionPane.showInputDialog("Enter your name? ");
+        JOptionPane.showMessageDialog(null, "Hello "+name);
 
-        System.out.println("He is now "+location);
-        System.out.println("He is "+age+"years old.");
+        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: "));
+        JOptionPane.showMessageDialog(null, "You are "+age+" years old.");
     }
 }
