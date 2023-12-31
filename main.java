@@ -1,20 +1,22 @@
 public class main {
-    public static void main(String[] args) 
-    {
-        int age = 15;
+    public static void main(String[] args) {
+        String day = "Monday";
 
-        if (age==75) {
-            System.out.println("Boomer");
+        switch(day) {
+            case "Sunday": System.out.println("This is "+day);
+            break;
+            case "Monday": System.out.println("This is "+day);
+            break;
+            case "Tuesday": System.out.println("This is "+day);
+            break;
+            case "Wednesday": System.out.println("This is "+day);
+            break;
+            case "Thursday": System.out.println("This is "+day);
+            break;
+            case "Friday": System.out.println("This is "+day);
+            break;
+            case "Saturday": System.out.println("This is "+day);
+            break;
         }
-        else if (age>=18) {
-            System.out.println("Adult");
-        }
-        else if (age>=13) {
-            System.out.println("Teeneger");
-        }
-        else {
-            System.out.println("Kids");
-        }
-
     }
 }
